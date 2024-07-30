@@ -19,16 +19,44 @@ if (!isset($_SESSION['user'])) {
 
     <script src="scripts/jquery.js"></script>
     <script src="scripts/sweetalert2.min.js"></script>
+    <script src="scripts/main.js"></script>
+    <script src="scripts/index.js"></script>
     
     <script src="https://cdnapp.websitepolicies.com/widgets/cookies/lnkjdr5s.js" defer></script>
     <title>Reawaito</title>
 
 </head>
 <body class="loader">
-    <img id='switchmode' src='icons/dark.png' alt='light mode'></img>
-    <div id='main'>
-        <p id='maintext'>reawaito.</p>
-        <p id='mainsubtext'>because our founder was bored.</p>
+    <div id='modehover' class='unbinded'></div>
+    <div id='lightmode'>
+        <img class='switchmode' src='icons/light.png' alt='dark mode'></img>
+        <div id='main'>
+            <p id='maintext'>reawaito.</p>
+            <p id='mainsubtext'>because our founder was bored.</p>
+        </div>
+        <!--<div class='arrowhover' class='hoverswap'><img class='arrow' src='icons/arrowdark.png' alt='next page'></img></div>-->
+        <div class='arrowhover' class='hoverswap'><img class='arrownm' src='icons/arrowdarksmall.png'></img><img class='arrow' src='icons/arrowdarksmall.png'></img></div>
+        <img class='switchArrow' src='icons/arrowdarksmall.png'>
+        <!--<div id='middleline'></div>-->
+    </div>
+    <div id='darkmode'>
+        <img class='switchmode' src='icons/dark.png' alt='light mode'></img>
+        <div id='main'>
+            <p id='maintext'>reawaito.</p>
+            <p id='mainsubtext'>because our founder was bored.</p>
+        </div>
+        <!--<div class='arrowhover' class='hoverswap'><img class='arrow' src='icons/arrowlight.png' alt='next page'></img></div>-->
+        <div class='arrowhover' class='hoverswap'><img class='arrownm' src='icons/arrowlightsmall.png'></img><img class='arrow' src='icons/arrowlightsmall.png'></img></div>
+        <img class='switchArrow' src='icons/arrowlightsmall.png'>
+        <!--<div id='middleline'></div>-->
+    </div>
+    <div id='innerwebsite'>
+        <div>games.</div>
+        <div>music.</div>
+        <div>web apps.</div>
+        <div>contact.</div>
+        <div class='arrowhover' class='hoverswap'><img class='arrownm' src='icons/arrowlightsmall.png'></img><img class='arrow' src='icons/arrowlightsmall.png'></img></div>
+        <img class='switchArrow' src='icons/arrowlightsmall.png'>
     </div>
 </body>
 </html>
